@@ -85,7 +85,7 @@ function Projects() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="testimonials">
+      <section id="projects" className="testimonials">
         <h2 className="fade-in">Featured Projects</h2>
         
         <div className="testimonials-grid">
