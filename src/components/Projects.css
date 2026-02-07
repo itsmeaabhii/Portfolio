@@ -17,8 +17,77 @@
   font-size: 1.05rem;
   margin-bottom: 4rem;
   color: #333;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-category {
+  background: var(--white);
+  border: 3px solid var(--black);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.tech-category h3 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exposure-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--yellow);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 2px solid var(--black);
+}
+
+.tech-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background: var(--white);
+  border: 2px solid var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--black);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  background: var(--yellow);
+}
+
+.tech-note {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* Old clients-grid styles - keeping for backward compatibility */
 .clients-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -137,6 +206,10 @@
 }
 
 @media (max-width: 1024px) {
+  .tech-categories {
+    grid-template-columns: 1fr;
+  }
+  
   .clients-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -154,6 +227,18 @@
   .clients h2,
   .testimonials h2 {
     font-size: 2rem;
+  }
+
+  .tech-categories {
+    gap: 1.5rem;
+  }
+
+  .tech-category {
+    padding: 1.5rem;
+  }
+
+  .tech-category h3 {
+    font-size: 1.1rem;
   }
 
   .clients-grid {
