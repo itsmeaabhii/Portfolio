@@ -1,0 +1,126 @@
+.value-prop {
+  background: var(--yellow);
+  padding: 8rem 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.value-prop h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.value-prop-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #222;
+}
+
+.value-prop-content p strong {
+  font-weight: 700;
+}
+
+.crafted {
+  background: linear-gradient(135deg, #FFF9E6 0%, #FFEEC9 100%);
+  padding: 8rem 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.crafted-image {
+  position: relative;
+}
+
+.crafted-image svg {
+  width: 100%;
+  height: auto;
+}
+
+.crafted-content h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--black);
+}
+
+.crafted-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.crafted-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.crafted-feature {
+  text-align: center;
+}
+
+.crafted-feature-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--black);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  font-size: 1.5rem;
+}
+
+.crafted-feature h4 {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--black);
+  margin-bottom: 0.25rem;
+}
+
+.crafted-feature p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
+  .value-prop,
+  .crafted {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 5rem 5%;
+  }
+
+  .value-prop h2,
+  .crafted-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .value-prop,
+  .crafted {
+    padding: 4rem 5%;
+  }
+
+  .value-prop h2,
+  .crafted-content h2 {
+    font-size: 2rem;
+  }
+
+  .crafted-features {
+    grid-template-columns: 1fr;
+  }
+}
