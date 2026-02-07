@@ -15,9 +15,12 @@ function Contact() {
             get involved and make a difference.
           </p>
           <a 
-            href="mailto:abhishekprakash963@gmail.com?subject=Resume Request&body=Hi Abhishek, I'd like to request your resume."
+            href="/Abhishek_Resume.pdf"
             className="cta-button" 
             style={{textDecoration: 'none', display: 'inline-block'}}
+            download="Abhishek_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download Resume
           </a>
