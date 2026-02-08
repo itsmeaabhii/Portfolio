@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 
 function Projects() {
+  const [statsError, setStatsError] = useState({ github: false, langs: false, streak: false });
+
+  const handleImageError = (type) => {
+    setStatsError(prev => ({ ...prev, [type]: true }));
+  };
+
   return (
     <>
       {/* Clients Section */}
@@ -170,28 +176,59 @@ function Projects() {
         
         <div className="stats-grid">
           <div className="stat-card fade-in">
-            <img 
-              src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical"
-              alt="GitHub Stats"
-              loading="lazy"
-            />
+            {!statsError.github ? (
+              <img 
+                src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical"
+                alt="GitHub Stats"
+                loading="lazy"
+                onError={() => handleImageError('github')}
+              />
+            ) : (
+              <div className="stats-placeholder">
+                <h3>📊 GitHub Stats</h3>
+                <p>Stats temporarily unavailable</p>
+                <a href="https://github.com/itsmeaabhii" target="_blank" rel="noopener noreferrer" className="mini-cta">
+                  View on GitHub →
+                </a>
+              </div>
+            )}
           </div>
           
           <div className="stat-card fade-in">
-            <img 
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical"
-              alt="Top Languages"
-              loading="lazy"
-            />
+            {!statsError.langs ? (
+              <img 
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical"
+                alt="Top Languages"
+                loading="lazy"
+                onError={() => handleImageError('langs')}
+              />
+            ) : (
+              <div className="stats-placeholder">
+                <h3>💻 Top Languages</h3>
+                <p>Python • C++ • JavaScript</p>
+                <p>TensorFlow • React • Node.js</p>
+              </div>
+            )}
           </div>
         </div>
 
         <div className="streak-card fade-in">
-          <img 
-            src="https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical"
-            alt="GitHub Streak"
-            loading="lazy"
-          />
+          {!statsError.streak ? (
+            <img 
+              src="https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical"
+              alt="GitHub Streak"
+              loading="lazy"
+              onError={() => handleImageError('streak')}
+            />
+          ) : (
+            <div className="stats-placeholder">
+              <h3>🔥 GitHub Streak</h3>
+              <p>Active contributor since 2022</p>
+              <a href="https://github.com/itsmeaabhii" target="_blank" rel="noopener noreferrer" className="mini-cta">
+                View Activity →
+              </a>
+            </div>
+          )}
         </div>
       </section>
     </>

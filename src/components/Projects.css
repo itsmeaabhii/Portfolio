@@ -270,6 +270,50 @@
   display: block;
 }
 
+.stats-placeholder {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--text-primary);
+  background: rgba(255, 198, 41, 0.1);
+  border-radius: 8px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stats-placeholder h3 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--yellow);
+}
+
+.stats-placeholder p {
+  margin: 0.5rem 0;
+  color: #E0E0E0;
+  font-size: 1rem;
+}
+
+.mini-cta {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--bg-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.mini-cta:hover {
+  transform: translateY(-2px);
+}
+
 @media (max-width: 1024px) {
   .tech-categories {
     grid-template-columns: 1fr;
