@@ -109,9 +109,35 @@
 
 /* CTA Section */
 .cta-section {
-  background: var(--bg-primary);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-accent) 100%);
   padding: 8rem 5%;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 198, 41, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
 .cta-section h2 {
@@ -122,21 +148,50 @@
   max-width: 1000px;
   margin: 0 auto 2.5rem;
   color: var(--text-primary);
+  position: relative;
+  z-index: 1;
 }
 
 .cta-section .cta-button {
   font-size: 1.1rem;
   padding: 1rem 3rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 24px rgba(255, 198, 41, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(255, 198, 41, 0.4);
 }
 
 .cta-illustration {
   max-width: 800px;
   margin: 3rem auto 0;
+  position: relative;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .cta-illustration svg {
   width: 100%;
   height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+  transition: filter 0.3s ease;
+}
+
+.cta-illustration:hover svg {
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2));
 }
 
 /* Contact Form */
@@ -147,6 +202,15 @@
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
 }
 
 .form-group {
