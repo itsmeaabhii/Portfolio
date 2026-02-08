@@ -171,7 +171,7 @@ function Projects() {
         <div className="stats-grid">
           <div className="stat-card fade-in">
             <img 
-              src={`https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF&icon_color=2DD4B4&count_private=true&include_all_commits=true&cache_seconds=1800&v=${Date.now()}`}
+              src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF&icon_color=2DD4B4&count_private=true&include_all_commits=true"
               alt="GitHub Stats"
               loading="lazy"
             />
@@ -179,7 +179,7 @@ function Projects() {
           
           <div className="stat-card fade-in">
             <img 
-              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF&langs_count=8&cache_seconds=1800&v=${Date.now()}`}
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF&langs_count=8"
               alt="Top Languages"
               loading="lazy"
             />
@@ -188,7 +188,7 @@ function Projects() {
 
         <div className="streak-card fade-in">
           <img 
-            src={`https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical&hide_border=true&background=1A1A1A&ring=FFC629&fire=FF6B6B&currStreakLabel=FFFFFF&cache_seconds=1800&v=${Date.now()}`}
+            src="https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical&hide_border=true&background=1A1A1A&ring=FFC629&fire=FF6B6B&currStreakLabel=FFFFFF"
             alt="GitHub Streak"
             loading="lazy"
           />
