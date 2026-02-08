@@ -202,7 +202,7 @@ function Projects() {
           <div className="stat-card fade-in">
             {!statsError.github ? (
               <img 
-                src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical"
+                src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical"
                 alt="GitHub Stats"
                 loading="lazy"
                 onError={() => handleImageError('github')}
@@ -221,7 +221,7 @@ function Projects() {
           <div className="stat-card fade-in">
             {!statsError.langs ? (
               <img 
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical"
+                src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical"
                 alt="Top Languages"
                 loading="lazy"
                 onError={() => handleImageError('langs')}
@@ -239,7 +239,7 @@ function Projects() {
         <div className="streak-card fade-in">
           {!statsError.streak ? (
             <img 
-              src="https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical"
+              src="https://streak-stats.demolab.com/?user=itsmeaabhii&theme=radical"
               alt="GitHub Streak"
               loading="lazy"
               onError={() => handleImageError('streak')}

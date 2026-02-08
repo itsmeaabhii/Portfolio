@@ -1,11 +1,40 @@
 .hero {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #1A1A1A !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5rem 5%;
   gap: 4rem;
   align-items: center;
-  background: var(--bg-hero);
   min-height: 90vh;
+}
+
+/* Force override dark mode for entire hero section */
+.hero,
+.hero *,
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero span {
+  color: #1A1A1A !important;
+  -webkit-text-fill-color: #1A1A1A !important;
+}
+
+/* Exclude button from text color override */
+.hero .cta-button {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  background-color: #000000 !important;
+}
+
+/* Force black text in hero section */
+.hero-black-text,
+.hero-black-text h2,
+.hero-black-text h3,
+.hero-black-text p {
+  color: #000000 !important;
 }
 
 .hero-content h2 {
@@ -14,15 +43,27 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: var(--text-primary);
+  color: #1A1A1A !important;
+  -webkit-text-fill-color: #1A1A1A !important;
 }
 
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: var(--text-secondary);
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333 !important;
   max-width: 90%;
   line-height: 1.8;
+}
+
+.feature-text h3 {
+  color: #1A1A1A !important;
+  -webkit-text-fill-color: #1A1A1A !important;
+}
+
+.feature-text p {
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333 !important;
 }
 
 .features {
@@ -42,7 +83,7 @@
   width: 45px;
   height: 45px;
   background: var(--yellow);
-  border: 2px solid var(--border-color);
+  border: 2px solid #1A1A1A;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -55,12 +96,12 @@
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
-  color: var(--text-primary);
+  color: #1A1A1A !important;
 }
 
 .feature-text p {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: #1A1A1A !important;
   margin: 0;
 }
 
@@ -76,6 +117,22 @@
   width: 100%;
   height: auto;
   animation: float 6s ease-in-out infinite;
+}
+
+/* Prevent CSS border-radius from affecting SVG */
+svg, svg *,
+.illustration, .illustration *,
+.hero-image svg, .hero-image svg * {
+  border-radius: 0 !important;
+}
+
+/* Reset any inherited border styles on SVG elements */
+.hero-image svg rect,
+.hero-image svg circle,
+.hero-image svg ellipse,
+.hero-image svg path {
+  border: none !important;
+  box-shadow: none !important;
 }
 
 @keyframes float {
@@ -120,4 +177,24 @@
   .hero-image {
     min-height: 300px;
   }
+}
+
+/* CRITICAL: Override all text colors in hero to black */
+#home .hero-content h2,
+#home .hero-content p,
+#home .hero-content .feature-text h3,
+#home .hero-content .feature-text p,
+.hero .hero-content.fade-in h2,
+.hero .hero-content.fade-in p,
+.hero .hero-content .feature-text h3,
+.hero .hero-content .feature-text p,
+section#home h2,
+section#home p,
+section.hero h2,
+section.hero p,
+.hero h2,
+.hero p,
+.hero h3 {
+  color: #1A1A1A !important;
+  -webkit-text-fill-color: #1A1A1A !important;
 }

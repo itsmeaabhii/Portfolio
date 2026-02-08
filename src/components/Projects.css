@@ -83,7 +83,7 @@
 
 .tech-note {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-top: 0.75rem;
   font-style: italic;
 }
@@ -175,7 +175,7 @@
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .testimonial-author {
@@ -200,12 +200,12 @@
 .author-info h4 {
   font-weight: 700;
   font-size: 1rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .author-info p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
 }
 
