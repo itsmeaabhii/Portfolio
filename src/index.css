@@ -18,6 +18,30 @@
   --black: #1A1A1A;
   --white: #FFFFFF;
   --gray: #F5F5F5;
+  
+  /* Light mode specific */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5F5;
+  --text-primary: #1A1A1A;
+  --text-secondary: #333333;
+  --border-color: #1A1A1A;
+}
+
+body.dark-mode {
+  --bg-primary: #1A1A1A;
+  --bg-secondary: #2D2D2D;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E0E0E0;
+  --border-color: #FFFFFF;
+  --white: #1A1A1A;
+  --black: #FFFFFF;
+  --gray: #2D2D2D;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {

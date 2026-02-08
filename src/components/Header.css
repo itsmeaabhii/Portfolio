@@ -76,6 +76,32 @@
   box-shadow: 0 5px 15px rgba(255, 198, 41, 0.4);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.theme-toggle {
+  background: var(--gray);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--black);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  background: var(--yellow);
+}
+
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -106,8 +132,18 @@
     display: block;
   }
 
+  .nav-actions {
+    gap: 1rem;
+  }
+
   .cta-button {
     display: none;
+  }
+
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 
   .logo-s {

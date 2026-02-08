@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 function Contact() {
+  const form = useRef();
+  const [formStatus, setFormStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setFormStatus('');
+
+    // Replace these with your EmailJS credentials
+    const serviceID = 'YOUR_SERVICE_ID';
+    const templateID = 'YOUR_TEMPLATE_ID';
+    const publicKey = 'YOUR_PUBLIC_KEY';
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then((result) => {
+        setFormStatus('success');
+        setIsSubmitting(false);
+        form.current.reset();
+      }, (error) => {
+        setFormStatus('error');
+        setIsSubmitting(false);
+      });
+  };
+
   return (
     <>
       {/* Pricing Section */}
@@ -66,13 +92,53 @@ function Contact() {
           Have a project idea, an opportunity, or just want to connect? I'd love to hear from you — drop a 
           message and let's create something impactful.
         </h2>
-        <a 
-          href="mailto:abhishekprakash963@gmail.com?subject=Project Inquiry&body=Hi Abhishek, I have a project/opportunity to discuss with you."
-          className="cta-button fade-in" 
-          style={{textDecoration: 'none', display: 'inline-block'}}
-        >
-          Send Message
-        </a>
+        
+        <form ref={form} onSubmit={sendEmail} className="contact-form fade-in">
+          <div className="form-group">
+            <input 
+              type="text" 
+              name="from_name" 
+              placeholder="Your Name" 
+              required 
+              className="form-input"
+            />
+          </div>
+          
+          <div className="form-group">
+            <input 
+              type="email" 
+              name="from_email" 
+              placeholder="Your Email" 
+              required 
+              className="form-input"
+            />
+          </div>
+          
+          <div className="form-group">
+            <textarea 
+              name="message" 
+              placeholder="Your Message" 
+              required 
+              rows="6"
+              className="form-input"
+            ></textarea>
+          </div>
+          
+          <button 
+            type="submit" 
+            className="cta-button" 
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </button>
+          
+          {formStatus === 'success' && (
+            <p className="form-message success">✓ Message sent successfully! I'll get back to you soon.</p>
+          )}
+          {formStatus === 'error' && (
+            <p className="form-message error">✗ Something went wrong. Please try again or email me directly.</p>
+          )}
+        </form>
         
         <div className="cta-illustration fade-in">
           <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">

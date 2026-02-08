@@ -205,6 +205,70 @@
   margin: 0;
 }
 
+/* GitHub Stats Section */
+.github-stats {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+  padding: 6rem 5%;
+  text-align: center;
+}
+
+.github-stats h2 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--yellow);
+}
+
+.github-stats p {
+  font-size: 1.05rem;
+  margin-bottom: 4rem;
+  color: #E0E0E0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--yellow);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.stat-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.streak-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--yellow);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.streak-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .tech-categories {
     grid-template-columns: 1fr;
@@ -217,6 +281,11 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -227,6 +296,19 @@
   .clients h2,
   .testimonials h2 {
     font-size: 2rem;
+  }
+
+  .github-stats h2 {
+    font-size: 2rem;
+  }
+
+  .github-stats {
+    padding: 4rem 5%;
+  }
+
+  .stat-card,
+  .streak-card {
+    padding: 1rem;
   }
 
   .tech-categories {

@@ -162,6 +162,38 @@ function Projects() {
           </div>
         </div>
       </section>
+
+      {/* GitHub Stats Section */}
+      <section className="github-stats">
+        <h2 className="fade-in">GitHub Activity</h2>
+        <p className="fade-in">A snapshot of my coding journey and contributions</p>
+        
+        <div className="stats-grid">
+          <div className="stat-card fade-in">
+            <img 
+              src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF&icon_color=2DD4B4" 
+              alt="GitHub Stats"
+              loading="lazy"
+            />
+          </div>
+          
+          <div className="stat-card fade-in">
+            <img 
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical&hide_border=true&bg_color=1A1A1A&title_color=FFC629&text_color=FFFFFF" 
+              alt="Top Languages"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div className="streak-card fade-in">
+          <img 
+            src="https://github-readme-streak-stats.herokuapp.com/?user=itsmeaabhii&theme=radical&hide_border=true&background=1A1A1A&ring=FFC629&fire=FF6B6B&currStreakLabel=FFFFFF" 
+            alt="GitHub Streak"
+            loading="lazy"
+          />
+        </div>
+      </section>
     </>
   );
 }
