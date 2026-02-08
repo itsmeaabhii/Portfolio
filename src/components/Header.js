@@ -47,6 +47,9 @@ function Header() {
       
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#services" onClick={closeMenu}>Skills</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         <li className="social-icons-nav">
           <a href="https://www.linkedin.com/in/abhishek-prakash-0391402b7/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} aria-label="LinkedIn">
             <FaLinkedin />
@@ -58,9 +61,6 @@ function Header() {
             <SiLeetcode />
           </a>
         </li>
-        <li><a href="#services" onClick={closeMenu}>Skills</a></li>
-        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
       </ul>
 
       <div className="nav-actions">
