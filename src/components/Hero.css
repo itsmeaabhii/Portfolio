@@ -4,7 +4,7 @@
   padding: 5rem 5%;
   gap: 4rem;
   align-items: center;
-  background: linear-gradient(180deg, var(--white) 0%, var(--gray) 100%);
+  background: var(--bg-hero);
   min-height: 90vh;
 }
 
@@ -14,13 +14,13 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-secondary);
   max-width: 90%;
   line-height: 1.8;
 }
@@ -41,7 +41,8 @@
 .feature-icon {
   width: 45px;
   height: 45px;
-  background: var(--black);
+  background: var(--yellow);
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -54,12 +55,12 @@
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .feature-text p {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
 }
 

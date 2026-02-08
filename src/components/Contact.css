@@ -1,6 +1,6 @@
 /* Pricing Section */
 .pricing {
-  background: linear-gradient(135deg, #FFF9E6 0%, #FFEEC9 50%, var(--pink) 100%);
+  background: var(--bg-hero);
   padding: 6rem 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,19 +13,19 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .pricing-content p {
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-secondary);
 }
 
 .pricing-card {
   background: var(--yellow);
-  border: 3px solid var(--black);
+  border: 3px solid var(--border-color);
   border-radius: 16px;
   overflow: hidden;
 }
@@ -40,7 +40,7 @@
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--bg-primary);
 }
 
 .price {
@@ -48,14 +48,14 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--bg-primary);
 }
 
 .pricing-header p {
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
-  color: var(--black);
+  color: var(--bg-primary);
 }
 
 .pricing-cta {
@@ -109,7 +109,7 @@
 
 /* CTA Section */
 .cta-section {
-  background: var(--white);
+  background: var(--bg-primary);
   padding: 8rem 5%;
   text-align: center;
 }
@@ -121,7 +121,7 @@
   line-height: 1.3;
   max-width: 1000px;
   margin: 0 auto 2.5rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .cta-section .cta-button {
@@ -144,8 +144,8 @@
   max-width: 600px;
   margin: 3rem auto;
   padding: 2.5rem;
-  background: var(--white);
-  border: 3px solid var(--black);
+  background: var(--card-bg);
+  border: var(--card-border);
   border-radius: 16px;
 }
 
@@ -156,11 +156,12 @@
 .form-input {
   width: 100%;
   padding: 1rem 1.5rem;
-  border: 2px solid var(--black);
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
-  background: var(--white);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 

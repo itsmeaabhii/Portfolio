@@ -1,6 +1,6 @@
 .services {
   padding: 6rem 5%;
-  background: var(--white);
+  background: var(--bg-primary);
 }
 
 .services h2 {
@@ -9,7 +9,7 @@
   font-weight: 800;
   margin-bottom: 1rem;
   text-align: center;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .services-subtitle {
@@ -17,7 +17,7 @@
   max-width: 700px;
   margin: 0 auto 4rem;
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .services-grid {
@@ -28,8 +28,8 @@
 }
 
 .service-card {
-  background: var(--white);
-  border: 3px solid var(--black);
+  background: var(--card-bg);
+  border: var(--card-border);
   border-radius: 16px;
   padding: 2rem;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -66,12 +66,12 @@
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .service-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 

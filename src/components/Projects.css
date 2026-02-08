@@ -1,6 +1,6 @@
 /* Clients Section */
 .clients {
-  background: var(--pink);
+  background: var(--bg-section-alt);
   padding: 6rem 5%;
   text-align: center;
 }
@@ -10,13 +10,13 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .clients p {
   font-size: 1.05rem;
   margin-bottom: 4rem;
-  color: #333;
+  color: var(--text-secondary);
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -31,8 +31,8 @@
 }
 
 .tech-category {
-  background: var(--white);
-  border: 3px solid var(--black);
+  background: var(--card-bg);
+  border: var(--card-border);
   border-radius: 12px;
   padding: 2rem;
   text-align: left;
@@ -43,7 +43,7 @@
   font-size: 1.3rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -55,7 +55,8 @@
   background: var(--yellow);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
-  border: 2px solid var(--black);
+  border: 2px solid var(--border-color);
+  color: var(--bg-primary);
 }
 
 .tech-items {
@@ -65,13 +66,13 @@
 }
 
 .tech-tag {
-  background: var(--white);
-  border: 2px solid var(--black);
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--text-primary);
   transition: transform 0.2s, background 0.2s;
 }
 
@@ -115,7 +116,7 @@
 /* Testimonials Section */
 .testimonials {
   padding: 6rem 5%;
-  background: var(--white);
+  background: var(--bg-primary);
 }
 
 .testimonials h2 {
@@ -124,7 +125,7 @@
   font-weight: 800;
   margin-bottom: 4rem;
   text-align: center;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .testimonials-grid {
@@ -134,8 +135,8 @@
 }
 
 .testimonial-card {
-  background: var(--white);
-  border: 3px solid var(--black);
+  background: var(--card-bg);
+  border: var(--card-border);
   border-radius: 16px;
   padding: 2.5rem;
   position: relative;
