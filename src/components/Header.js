@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +47,17 @@ function Header() {
       
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>
-        <li><a href="#about" onClick={closeMenu}>About</a></li>
+        <li className="social-icons-nav">
+          <a href="https://www.linkedin.com/in/abhishek-prakash-0391402b7/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/itsmeaabhii" target="_blank" rel="noopener noreferrer" onClick={closeMenu} aria-label="GitHub">
+            <FaGithub />
+          </a>
+          <a href="https://leetcode.com/u/abhishekprakash963/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} aria-label="LeetCode">
+            <SiLeetcode />
+          </a>
+        </li>
         <li><a href="#services" onClick={closeMenu}>Skills</a></li>
         <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
         <li><a href="#contact" onClick={closeMenu}>Contact</a></li>

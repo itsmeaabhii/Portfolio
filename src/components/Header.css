@@ -59,6 +59,33 @@
   color: var(--green);
 }
 
+.social-icons-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-icons-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-accent);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons-nav a:hover {
+  transform: translateY(-3px);
+  background: var(--yellow);
+  color: var(--black);
+  box-shadow: 0 5px 15px rgba(255, 198, 41, 0.3);
+}
+
 .cta-button {
   background: var(--yellow);
   color: var(--black);
@@ -146,6 +173,11 @@
     width: 40px;
     height: 40px;
     font-size: 1rem;
+  }
+
+  .social-icons-nav {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .logo-s {
