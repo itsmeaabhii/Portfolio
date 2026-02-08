@@ -59,6 +59,13 @@ footer {
   color: #1A1A1A;
 }
 
+.footer-section p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #2A2A2A;
+  line-height: 1.6;
+}
+
 .footer-links {
   list-style: none;
 }

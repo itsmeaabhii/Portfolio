@@ -8,7 +8,7 @@ function Timeline() {
       type: 'education',
       title: 'B.Tech in Computer Science & Engineering',
       organization: 'Indian Institute of Information Technology, Kalyani',
-      period: '2023 - 2027 (Expected)',
+      period: '2022 - 2026',
       location: 'West Bengal, India',
       description: 'Pursuing B.Tech with a focus on AI/ML, Full-Stack Development, and Algorithm Design. Active in coding clubs and technical projects.',
       icon: '🎓'
@@ -18,7 +18,7 @@ function Timeline() {
       type: 'experience',
       title: 'Undergraduate Researcher',
       organization: 'Indian Institute of Information Technology, Kalyani',
-      period: '2024 - Present',
+      period: '2024 - 2025',
       location: 'West Bengal, India',
       description: 'Conducting research in AI/ML and software engineering. Working on innovative projects involving machine learning algorithms, data analysis, and developing intelligent systems.',
       icon: '🔬'
