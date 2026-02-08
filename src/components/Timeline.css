@@ -1,7 +1,7 @@
 /* Timeline Section */
 .timeline-section {
-  background: var(--bg-primary);
-  padding: 6rem 5%;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-accent) 100%);
+  padding: 4rem 5%;
   text-align: center;
 }
 
@@ -9,13 +9,13 @@
   font-family: 'Archivo', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--text-primary);
 }
 
 .timeline-subtitle {
   font-size: 1.05rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   color: var(--text-secondary);
   max-width: 700px;
   margin-left: auto;
@@ -26,7 +26,7 @@
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .timeline::before {
@@ -35,16 +35,17 @@
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: var(--border-color);
+  width: 4px;
+  background: linear-gradient(180deg, var(--yellow) 0%, var(--green) 50%, var(--blue) 100%);
   transform: translateX(-50%);
+  border-radius: 10px;
 }
 
 .timeline-item {
   display: grid;
   grid-template-columns: 1fr 80px 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -78,32 +79,63 @@
   font-size: 2rem;
   z-index: 10;
   position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-item.experience .timeline-icon {
-  background: var(--pink);
+  background: linear-gradient(135deg, var(--blue) 0%, #5BA8C9 100%);
 }
 
 .timeline-item.achievement .timeline-icon {
-  background: var(--green);
+  background: linear-gradient(135deg, var(--green) 0%, var(--dark-green) 100%);
+}
+
+.timeline-item.education .timeline-icon {
+  background: linear-gradient(135deg, var(--yellow) 0%, #FFB000 100%);
 }
 
 .timeline-content {
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-period {
   display: inline-block;
   background: var(--green);
   color: var(--bg-primary);
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-item.experience .timeline-period {
+  background: var(--blue);
+}
+
+.timeline-item.achievement .timeline-period {
+  background: var(--green);
+}
+
+.timeline-item.education .timeline-period {
+  background: var(--yellow);
+  color: var(--text-primary);
 }
 
 .timeline-content h3 {

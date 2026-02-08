@@ -16,12 +16,12 @@ function Timeline() {
     {
       id: 2,
       type: 'experience',
-      title: 'Software Development Intern',
-      organization: 'Your Company Name',
-      period: 'Summer 2025',
-      location: 'Location',
-      description: 'Worked on developing AI-powered applications and RESTful APIs. Contributed to full-stack projects using React and FastAPI.',
-      icon: '💼'
+      title: 'Undergraduate Researcher',
+      organization: 'Indian Institute of Information Technology, Kalyani',
+      period: '2024 - Present',
+      location: 'West Bengal, India',
+      description: 'Conducting research in AI/ML and software engineering. Working on innovative projects involving machine learning algorithms, data analysis, and developing intelligent systems.',
+      icon: '🔬'
     },
     {
       id: 3,
