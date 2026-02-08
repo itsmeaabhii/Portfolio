@@ -130,8 +130,10 @@
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .testimonial-card {
@@ -193,6 +195,7 @@
 .author-icon-1 { background: linear-gradient(135deg, #2DD4B4, #1A9876); }
 .author-icon-2 { background: linear-gradient(135deg, #7EC8E3, #5BA8C9); }
 .author-icon-3 { background: linear-gradient(135deg, #FFD4E8, #FFB6D9); }
+.author-icon-4 { background: linear-gradient(135deg, #FFC629, #FFB000); }
 
 .author-info h4 {
   font-weight: 700;

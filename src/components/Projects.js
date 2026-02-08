@@ -105,15 +105,15 @@ function Projects() {
             </div>
             <div className="testimonial-content">
               <p>
-                "A comprehensive RAG-based application that enables intelligent document question-answering using 
-                LangChain and vector databases. Features semantic search, context-aware responses, and multi-document 
-                support, built with a FastAPI backend and React frontend."
+                "A full-stack Retrieval-Augmented Generation (RAG) application with FastAPI backend and Pinecone 
+                vector database. Integrates Google and Cohere models for embeddings and reranking, featuring semantic 
+                search, context-aware responses, and multi-document support with vanilla JavaScript frontend."
               </p>
               <div className="testimonial-author">
                 <div className="author-icon author-icon-1"></div>
                 <div className="author-info">
-                  <h4>RAG Document Assistant</h4>
-                  <p>AI/ML Project</p>
+                  <h4>Cogni Chat</h4>
+                  <p>AI/ML • RAG Application</p>
                 </div>
               </div>
             </div>
@@ -129,15 +129,15 @@ function Projects() {
             </div>
             <div className="testimonial-content">
               <p>
-                "A full-stack e-commerce platform with real-time inventory management, secure payment integration, 
-                and responsive UI. Built using React, Node.js, MongoDB, and Stripe API, featuring user authentication, 
-                cart management, order tracking, and an admin dashboard."
+                "A modern AI-powered chat application built with Flutter, featuring real-time messaging, intelligent 
+                conversation capabilities, beautiful Material Design UI, and seamless cross-platform support for both 
+                Android and iOS devices with Firebase integration."
               </p>
               <div className="testimonial-author">
                 <div className="author-icon author-icon-2"></div>
                 <div className="author-info">
-                  <h4>E-Commerce Platform</h4>
-                  <p>Full-Stack Development</p>
+                  <h4>Flutter AI Chat App</h4>
+                  <p>Mobile Development • Flutter</p>
                 </div>
               </div>
             </div>
@@ -153,15 +153,39 @@ function Projects() {
             </div>
             <div className="testimonial-content">
               <p>
-                "A cryptographic messaging system implementing RSA and AES encryption for secure communication. 
-                Includes end-to-end encryption, key exchange mechanisms, and digital signatures, demonstrating 
-                a strong understanding of applied security concepts."
+                "A native Android music player application built with Kotlin, featuring local music library management, 
+                playlist creation, intuitive playback controls, modern Material Design interface, and offline music 
+                playback capabilities with custom audio visualization."
               </p>
               <div className="testimonial-author">
                 <div className="author-icon author-icon-3"></div>
                 <div className="author-info">
+                  <h4>Music App</h4>
+                  <p>Android Development • Kotlin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="testimonial-card slide-in-right">
+            <div className="testimonial-window">
+              <div className="window-controls">
+                <div className="window-control"></div>
+                <div className="window-control"></div>
+                <div className="window-control"></div>
+              </div>
+            </div>
+            <div className="testimonial-content">
+              <p>
+                "A cryptographic messaging system implementing RSA and AES encryption for secure communication. 
+                Features end-to-end encryption, key exchange mechanisms, and digital signatures, demonstrating 
+                a strong understanding of applied cryptography and security concepts."
+              </p>
+              <div className="testimonial-author">
+                <div className="author-icon author-icon-4"></div>
+                <div className="author-info">
                   <h4>Secure Messenger</h4>
-                  <p>Cryptography Project</p>
+                  <p>Cryptography • Security</p>
                 </div>
               </div>
             </div>
