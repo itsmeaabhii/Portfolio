@@ -113,7 +113,7 @@
   padding: 6rem 2%;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cta-section::before {
@@ -322,6 +322,13 @@ textarea.form-input {
   }
 
   .cta-section {
-    padding: 4rem 5% 5rem;
+    padding: 4rem 5% 8rem;
+    overflow: visible;
+    min-height: auto;
+  }
+
+  .cta-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
 }
