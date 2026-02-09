@@ -115,6 +115,11 @@ function Projects() {
                   <h4>Cogni Chat</h4>
                   <p>AI/ML • RAG Application</p>
                 </div>
+                <a href="https://github.com/itsmeaabhii/Cogni_Chat" target="_blank" rel="noopener noreferrer" className="github-link" title="View on GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -139,6 +144,11 @@ function Projects() {
                   <h4>Flutter AI Chat App</h4>
                   <p>Mobile Development • Flutter</p>
                 </div>
+                <a href="https://github.com/itsmeaabhii/flutter-chat-app" target="_blank" rel="noopener noreferrer" className="github-link" title="View on GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -163,6 +173,11 @@ function Projects() {
                   <h4>Music App</h4>
                   <p>Android Development • Kotlin</p>
                 </div>
+                <a href="https://github.com/itsmeaabhii/music-player" target="_blank" rel="noopener noreferrer" className="github-link" title="View on GitHub">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -202,7 +217,7 @@ function Projects() {
           <div className="stat-card fade-in">
             {!statsError.github ? (
               <img 
-                src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical"
+                src="https://github-readme-stats.vercel.app/api?username=itsmeaabhii&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117"
                 alt="GitHub Stats"
                 loading="lazy"
                 onError={() => handleImageError('github')}
@@ -210,7 +225,11 @@ function Projects() {
             ) : (
               <div className="stats-placeholder">
                 <h3>📊 GitHub Stats</h3>
-                <p>Stats temporarily unavailable</p>
+                <div style={{marginTop: '1rem', marginBottom: '1rem'}}>
+                  <p><strong>500+</strong> Problems Solved</p>
+                  <p><strong>20+</strong> Repositories</p>
+                  <p><strong>Active</strong> Contributor</p>
+                </div>
                 <a href="https://github.com/itsmeaabhii" target="_blank" rel="noopener noreferrer" className="mini-cta">
                   View on GitHub →
                 </a>
@@ -221,7 +240,7 @@ function Projects() {
           <div className="stat-card fade-in">
             {!statsError.langs ? (
               <img 
-                src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsmeaabhii&layout=compact&theme=radical&hide_border=true&bg_color=0d1117"
                 alt="Top Languages"
                 loading="lazy"
                 onError={() => handleImageError('langs')}
@@ -229,8 +248,15 @@ function Projects() {
             ) : (
               <div className="stats-placeholder">
                 <h3>💻 Top Languages</h3>
-                <p>Python • C++ • JavaScript</p>
-                <p>TensorFlow • React • Node.js</p>
+                <div style={{marginTop: '1rem', marginBottom: '1rem'}}>
+                  <p><strong>Python</strong> - AI/ML, Backend</p>
+                  <p><strong>C++</strong> - Algorithms, Research</p>
+                  <p><strong>JavaScript</strong> - Full-Stack</p>
+                  <p><strong>Java</strong> - Performance Analysis</p>
+                </div>
+                <a href="https://github.com/itsmeaabhii?tab=repositories" target="_blank" rel="noopener noreferrer" className="mini-cta">
+                  View Repositories →
+                </a>
               </div>
             )}
           </div>
@@ -239,7 +265,7 @@ function Projects() {
         <div className="streak-card fade-in">
           {!statsError.streak ? (
             <img 
-              src="https://streak-stats.demolab.com/?user=itsmeaabhii&theme=radical"
+              src="https://streak-stats.demolab.com/?user=itsmeaabhii&theme=radical&hide_border=true&background=0d1117"
               alt="GitHub Streak"
               loading="lazy"
               onError={() => handleImageError('streak')}
@@ -247,7 +273,11 @@ function Projects() {
           ) : (
             <div className="stats-placeholder">
               <h3>🔥 GitHub Streak</h3>
-              <p>Active contributor since 2022</p>
+              <div style={{marginTop: '1rem', marginBottom: '1rem'}}>
+                <p><strong>Consistent Coder</strong> since 2022</p>
+                <p>Regular contributions across multiple projects</p>
+                <p>Focus: Post-Quantum Cryptography, AI/ML, Full-Stack</p>
+              </div>
               <a href="https://github.com/itsmeaabhii" target="_blank" rel="noopener noreferrer" className="mini-cta">
                 View Activity →
               </a>

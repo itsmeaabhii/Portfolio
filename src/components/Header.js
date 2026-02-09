@@ -72,7 +72,7 @@ function Header() {
           {isDarkMode ? <FaSun /> : <FaMoon />}
         </button>
         
-        <a href="#contact" className="cta-button" style={{textDecoration: 'none'}}>Hire Me</a>
+        <a href="#contact" className="cta-button" style={{textDecoration: 'none'}}>Let's Connect</a>
       </div>
 
       <div className="menu-toggle" onClick={toggleMenu}>

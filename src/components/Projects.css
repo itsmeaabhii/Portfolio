@@ -183,6 +183,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: auto;
+  position: relative;
 }
 
 .author-icon {
@@ -207,6 +208,33 @@
   font-size: 0.9rem;
   color: var(--text-secondary);
   margin: 0;
+}
+
+.github-link {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.github-link:hover {
+  background: var(--yellow);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 198, 41, 0.3);
+}
+
+.github-link svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* GitHub Stats Section */

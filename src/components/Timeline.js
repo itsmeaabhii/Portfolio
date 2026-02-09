@@ -17,10 +17,10 @@ function Timeline() {
       id: 2,
       type: 'experience',
       title: 'Undergraduate Researcher',
-      organization: 'Indian Institute of Information Technology, Kalyani',
-      period: '2024 - 2025',
+      organization: 'IIIT Kalyani',
+      period: 'Jan 2025 - Present',
       location: 'West Bengal, India',
-      description: 'Conducting research in AI/ML and software engineering. Working on innovative projects involving machine learning algorithms, data analysis, and developing intelligent systems.',
+      description: 'Spearheading research on Post-Quantum Cryptography (PQC), specifically optimizing Hermitian code-based McEliece systems. Developed and optimized List Decoding Algorithms in C++, improving error-correction capability and security margins. Automated performance analysis using Python and Java, generating data-driven insights on encryption throughput and memory overhead.',
       icon: '🔬'
     },
     {
