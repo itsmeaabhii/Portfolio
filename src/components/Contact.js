@@ -119,7 +119,7 @@ function Contact() {
               name="message" 
               placeholder="Your Message" 
               required 
-              rows="6"
+              rows="5"
               className="form-input"
             ></textarea>
           </div>
